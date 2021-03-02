@@ -1,0 +1,216 @@
+* {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/*HEADER*/
+header {
+  margin: 5px;
+  background-image: url(/img/header.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 250px;
+}
+/*TOP HEADER*/
+.topHeader {
+  border-bottom: 0px;
+  padding: 5px;
+  display: flex;
+}
+.logo {
+  flex-grow: 1;
+  margin: 3px;
+  padding: 10px;
+  max-width: 7%;
+  max-height: 7%;
+}
+nav {
+  flex-grow: 3;
+  margin: 3px;
+  padding: 10px;
+  display: flex;
+}
+nav img {
+  max-height: 18px;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: inline;
+}
+ul li {
+  float: left;
+  text-align: center;
+  padding: 14px 16px;
+}
+li a {
+  color: #505065;
+  text-decoration: none;
+  font-size: larger;
+  text-decoration: underline;
+  text-decoration-style: wavy;
+}
+li a:hover {
+  color: rgba(239, 0, 80, 0.5);
+
+  text-decoration-color: rgb(0, 97, 224, 0.3);
+  transition: 0.2s;
+}
+.RRSS {
+  flex-grow: 1;
+  margin: 3px;
+  padding: 10px;
+}
+.RRSS img {
+  max-width: 20px;
+}
+
+/*BOTTOM HEADER*/
+.bottomHeader {
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+}
+.slogan {
+  background-color: rgba(150, 150, 150, 0.5);
+  margin: 3px;
+  padding: 30px;
+  width: 80%;
+  text-align: center;
+  color: rgba(239, 0, 80, 0.5);
+  font-size: 30px;
+  font-style: italic;
+}
+
+/*MAIN*/
+main {
+  display: flex;
+  margin: 5px;
+  background-color: rgba(200, 200, 200, 0.5);
+}
+main section {
+  flex-grow: 3;
+}
+main section article {
+  display: flex;
+  margin: 1em;
+  padding: 10px;
+  height: 20em;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+
+  flex: 1;
+}
+.art1 {
+  background-image: url(/img/img-articles/curso-escritura.jpeg);
+  background-size: cover;
+}
+.art2 {
+  background-image: url(/img/img-articles/noche-japon.jpeg);
+  background-size: cover;
+}
+.art3 {
+  background-image: url(/img/img-articles/festival-sakura.jpeg);
+  background-size: cover;
+}
+.art4 {
+  background-image: url(/img/img-articles/turismo-rural.jpeg);
+  background-size: cover;
+}
+.bottom {
+  background-image: url(/img/img-articles/turismo-urbano.jpeg);
+  background-size: cover;
+}
+/*ASIDE (in main)*/
+aside {
+  flex-grow: 1;
+  background-color: rgba(150, 150, 150, 0.5);
+  border-left: 2px dotted white;
+}
+aside article {
+  display: flex;
+  margin: 1em;
+  padding: 10px;
+  height: 31em;
+}
+.aside1 {
+  background-image: url(/img/img-articles/tokyo.jpeg);
+  background-size: cover;
+}
+.aside2 {
+  background-image: url(/img/img-articles/kyoto.jpeg);
+  background-size: cover;
+}
+/*FOOTER*/
+footer {
+  border: 10px solid black;
+  margin: 5px;
+  background-color: #f0a500;
+
+  padding: 10px;
+}
+
+/*MEDIA QUERIES*/
+
+/*tablet*/
+@media screen and (max-width: 834px) {
+  header {
+    font-size: small;
+  }
+  main {
+    flex-direction: column;
+  }
+  main section {
+    justify-content: stretch;
+    margin: unset;
+  }
+  aside {
+    justify-content: stretch;
+    margin: unset;
+  }
+}
+
+/*mobile*/
+@media screen and (max-width: 480px) {
+  main {
+    flex-direction: column;
+  }
+  main section {
+    justify-content: stretch;
+    margin: unset;
+  }
+  .topHeader {
+    display: flex;
+  }
+  img .logo {
+    width: 10em;
+    height: 10em;
+  }
+  div .column {
+    margin: unset;
+  }
+  aside {
+    justify-content: stretch;
+    border: unset;
+    border-top: 2px dotted white;
+  }
+  header section {
+    flex-direction: column;
+    font-size: small;
+  }
+  main .row {
+    flex-direction: column;
+  }
+  .logo {
+    max-width: 20%;
+  }
+}
