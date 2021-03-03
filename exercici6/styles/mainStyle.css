@@ -27,7 +27,7 @@ footer {
 /* MAIN GRID AREA*/
 main {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 5fr 2fr;
   grid-template-rows: 1fr;
   grid-template-areas: "blog aside";
 }
