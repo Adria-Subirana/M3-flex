@@ -1,6 +1,8 @@
 * {
   max-width: 1200px;
   margin: 0 auto;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
 }
 
 /*HEADER*/
@@ -21,14 +23,15 @@ header {
   flex-grow: 1;
   margin: 3px;
   padding: 10px;
-  max-width: 7%;
-  max-height: 7%;
+  max-width: 100px;
+  max-height: 100px;
 }
 nav {
   flex-grow: 3;
   margin: 3px;
   padding: 10px;
   display: flex;
+  justify-content: center;
 }
 nav img {
   max-height: 18px;
@@ -53,6 +56,7 @@ li a {
 }
 li a:hover {
   color: rgba(239, 0, 80, 0.5);
+
   text-decoration-color: rgb(0, 97, 224, 0.3);
   transition: 0.2s;
 }
@@ -63,6 +67,10 @@ li a:hover {
 }
 .RRSS img {
   max-width: 20px;
+}
+.RRSS ul {
+  display: flex;
+  flex-direction: column;
 }
 
 /*BOTTOM HEADER*/
@@ -77,9 +85,17 @@ li a:hover {
   padding: 30px;
   width: 80%;
   text-align: center;
-  color: rgba(239, 0, 80, 0.5);
+  color: rgba(220, 20, 70, 0.6);
   font-size: 30px;
   font-style: italic;
+  font-weight: bolder;
+  /*text-shadow: white 0px 0px 5px;*/
+}
+.comillas {
+  font-size: 50px;
+  font-family: "Catamaran", sans-serif;
+  line-height: 10px;
+  height: 10px;
 }
 
 /*MAIN*/
@@ -106,32 +122,88 @@ main section article {
 .column {
   display: flex;
   flex-direction: column;
-
   flex: 1;
 }
 .art1 {
   background-image: url(/img/img-articles/curso-escritura.jpeg);
   background-size: cover;
+  color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 0;
 }
 .art2 {
   background-image: url(/img/img-articles/noche-japon.jpeg);
   background-size: cover;
+  color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 0;
 }
 .art3 {
   background-image: url(/img/img-articles/festival-sakura.jpeg);
   background-size: cover;
+  color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 0;
 }
 .art4 {
   background-image: url(/img/img-articles/turismo-rural.jpeg);
   background-size: cover;
+  color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 0;
+}
+.bannerArticle {
+  display: flex;
+  background-color: rgba(239, 80, 80);
+  width: 100%;
+  padding-top: 1.6em;
+  padding-bottom: 0em;
+  font-weight: bolder;
+  display: inline-block;
+  line-height: 1.2em;
+  height: 1.1em;
+}
+.bannerArticle p {
+  width: 100%;
+  padding-left: 1em;
+  font-size: 1.4em;
+}
+.fecha {
+  width: 100%;
+  padding-left: 1.5em;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  font-weight: bolder;
+  text-shadow: black 0px 0px 4px;
+  display: inline-block;
+  line-height: 10px;
+  height: 10px;
+}
+.bannerArticle:hover {
+  height: 50%;
+  background-color: rgba(100, 5, 210, 0.5);
+  transition: 0.4s;
 }
 .bottom {
   background-image: url(/img/img-articles/turismo-urbano.jpeg);
   background-size: cover;
+  color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 0;
 }
 /*ASIDE (in main)*/
 aside {
-  flex-grow: 1;
+  flex-grow: 2;
   background-color: rgba(150, 150, 150, 0.5);
   border-left: 2px dotted white;
 }
@@ -139,16 +211,59 @@ aside article {
   display: flex;
   margin: 1em;
   padding: 10px;
-  height: 31em;
+  height: 31.5em;
 }
 .aside1 {
   background-image: url(/img/img-articles/tokyo.jpeg);
   background-size: cover;
+  color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 0;
 }
 .aside2 {
   background-image: url(/img/img-articles/kyoto.jpeg);
   background-size: cover;
+  color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 0;
 }
+.bannerArticleAs {
+  display: flex;
+  background-color: rgb(83, 184, 153);
+  width: 100%;
+  padding-top: 1.6em;
+  padding-bottom: 0em;
+  font-weight: bolder;
+  display: inline-block;
+  line-height: 1.2em;
+  height: 1.1em;
+}
+.bannerArticleAs p {
+  width: 100%;
+  padding-left: 1em;
+  font-size: 1.4em;
+}
+.fechaAs {
+  width: 100%;
+  padding-left: 1.5em;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  font-weight: bolder;
+  text-shadow: black 0px 0px 4px;
+  display: inline-block;
+  line-height: 10px;
+  height: 10px;
+}
+.bannerArticleAs:hover {
+  height: 50%;
+  background-color: rgba(100, 5, 210, 0.5);
+  transition: 0.4s;
+}
+
 /*FOOTER*/
 footer {
   display: flex;
@@ -162,16 +277,12 @@ footer {
 }
 footer ul {
   display: flex;
+
   align-self: center;
 }
 .links {
   flex-direction: column;
   padding-right: 10em;
-}
-.links a:hover {
-  color: rgba(239, 0, 80, 0.8);
-  text-decoration-color: rgb(0, 97, 224, 0.7);
-  transition: 0.2s;
 }
 .RRSSfooter {
   flex-grow: 1;
@@ -188,8 +299,18 @@ footer ul {
 
 /*tablet*/
 @media screen and (max-width: 834px) {
-  header {
-    font-size: small;
+  header nav ul li {
+    font-size: 11px;
+  }
+  header nav img {
+    max-width: 12px;
+  }
+  .logo {
+    max-width: 50px;
+    max-height: 50px;
+  }
+  .slogan {
+    font-size: 20px;
   }
   main {
     flex-direction: column;
@@ -246,9 +367,12 @@ footer ul {
     color: rgba(239, 0, 80, 0.8);
     font-weight: bold;
   }
+  header nav ul li {
+    font-size: 13px;
+  }
   .logo {
-    max-width: 20%;
-    max-height: 20%;
+    max-width: 50px;
+    max-height: 50px;
   }
   .RRSS {
     display: flex;
@@ -274,17 +398,15 @@ footer ul {
   }
   .RRSSfooter {
     flex-grow: 1;
-    margin: 3px;
-    padding: 10px;
-    display: flex;
-    justify-content: right;
+    margin: unset;
+    padding: unset;
   }
   .RRSSfooter img {
     max-width: 20px;
   }
-  .links {
-    flex-direction: column;
+  .links li {
     font-size: 10px;
-    padding: unset;
+    padding: 5px;
+    margin: 2px;
   }
 }
