@@ -41,7 +41,7 @@ aside {
 /* HEADER*/
 header {
   margin: 5px;
-  background-image: url(/img/header.jpg);
+  background-image: url(/exercici6/img/header.jpg);
   background-size: cover;
   background-position: center;
   height: 250px;
@@ -163,7 +163,7 @@ main section article {
   flex: 1;
 }
 .art1 {
-  background-image: url(/img/img-articles/curso-escritura.jpeg);
+  background-image: url(/exercici6/img/img-articles/curso-escritura.jpeg);
   background-size: cover;
   color: whitesmoke;
   display: flex;
@@ -172,7 +172,7 @@ main section article {
   padding: 0;
 }
 .art2 {
-  background-image: url(/img/img-articles/noche-japon.jpeg);
+  background-image: url(/exercici6/img/img-articles/noche-japon.jpeg);
   background-size: cover;
   color: whitesmoke;
   display: flex;
@@ -181,7 +181,7 @@ main section article {
   padding: 0;
 }
 .art3 {
-  background-image: url(/img/img-articles/festival-sakura.jpeg);
+  background-image: url(/exercici6/img/img-articles/festival-sakura.jpeg);
   background-size: cover;
   color: whitesmoke;
   display: flex;
@@ -190,7 +190,7 @@ main section article {
   padding: 0;
 }
 .art4 {
-  background-image: url(/img/img-articles/turismo-rural.jpeg);
+  background-image: url(/exercici6/img/img-articles/turismo-rural.jpeg);
   background-size: cover;
   color: whitesmoke;
   display: flex;
@@ -231,7 +231,7 @@ main section article {
   transition: 0.4s;
 }
 .bottom {
-  background-image: url(/img/img-articles/turismo-urbano.jpeg);
+  background-image: url(/exercici6/img/img-articles/turismo-urbano.jpeg);
   background-size: cover;
   color: whitesmoke;
   display: flex;
@@ -252,7 +252,7 @@ aside article {
   height: 31.5em;
 }
 .aside1 {
-  background-image: url(/img/img-articles/tokyo.jpeg);
+  background-image: url(/exercici6/img/img-articles/tokyo.jpeg);
   background-size: cover;
   color: whitesmoke;
   display: flex;
@@ -261,7 +261,7 @@ aside article {
   padding: 0;
 }
 .aside2 {
-  background-image: url(/img/img-articles/kyoto.jpeg);
+  background-image: url(/exercici6/img/img-articles/kyoto.jpeg);
   background-size: cover;
   color: whitesmoke;
   display: flex;
@@ -306,7 +306,7 @@ footer {
   display: flex;
   border: 5px dotted rgba(239, 0, 80, 0.5);
   margin: 5px;
-  background-image: url(/img/footer/footer1.jpg);
+  background-image: url(/exercici6/img/footer/footer1.jpg);
   background-size: cover;
   padding: 10px;
   height: 20em;
